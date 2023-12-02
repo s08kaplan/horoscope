@@ -1,19 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Borel&family=Dancing+Script:wght@500&family=Edu+SA+Beginner&family=Outfit&display=swap');
+
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Audiowide', sans-serif;
+/* font-family: 'Borel', cursive;
+font-family: 'Dancing Script', cursive;
+font-family: 'Edu SA Beginner', cursive;
+font-family: 'Outfit', sans-serif; */
 }
 
 body {
   height: 100vh;
   background-color: burlywood;
+  border: 1px;
 }
 
-.title.div{
-  margin-top: 1rem;
-  position: absolute;
-  z-index: 4;
-}
 
 /* !--------------NAVBAR------------------- */
 nav{
@@ -27,19 +32,27 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
+& .logo img{
+  width: 8rem;
+}
+
   & ul{
     padding: 1rem;
     margin-right: 1rem;
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 1rem;
     transition: all .5s ease;
-
+    @media screen and (max-width:666px){
+      flex-direction: column;
+      gap: .5rem;
+    }
     & li{
       font-weight: bolder;
       font-size: 1.3rem;
       transition: all .5s;
+     
     }
   }
 }
@@ -61,6 +74,7 @@ li:hover{
   background-color: blueviolet;
   overflow: hidden;
   border-radius: 1rem;
+  font-family: 'Dancing Script', cursive;
 
   & .cards {
     height: 350px;

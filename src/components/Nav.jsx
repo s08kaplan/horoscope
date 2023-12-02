@@ -1,10 +1,10 @@
 import React from "react";
-
+import logo from '../images/logo'
 const Nav = () => {
   return (
     <nav>
       <div className="logo">
-        <img src="../../public/images/logo.png" alt="" width="20px" height="300px" />
+        <img src={logo} alt="" />
       </div>
       <ul>
         <li>HOROSCOPE</li>
